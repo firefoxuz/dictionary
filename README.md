@@ -1,4 +1,4 @@
-# Annotated dictionary of the Uzbek language
+# :uzbekistan: Annotated dictionary of the Uzbek language
 
 The practical application of the words in this dictionary is illustrated by examples from Uzbek literature and the press. The dictionary is prepared by the State Scientific Publishing House "National Encyclopedia of Uzbekistan".
 
@@ -12,7 +12,11 @@ for notes on deploying the project on a live system.
 ## Demo
 
 You can run the demo at any time by visiting the site in your browser:  [Demo Online]( https://dic.firefox.uz/ "Demo Online")
+Default Administrator:
 
+Login: `admin@admin.uz`
+
+Password: `123456`
 ### Prerequisites
 
 Requirements for the software and other tools to build, test and push
