@@ -1,66 +1,89 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# Annotated dictionary of the Uzbek language
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+The practical application of the words in this dictionary is illustrated by examples from Uzbek literature and the press. The dictionary is prepared by the State Scientific Publishing House "National Encyclopedia of Uzbekistan".
 
-## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Getting Started
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+These instructions will give you a copy of the project up and running on
+your local machine for development and testing purposes. See deployment
+for notes on deploying the project on a live system.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Demo
 
-## Learning Laravel
+You can run the demo at any time by visiting the site in your browser:  [Demo Online]( https://dic.firefox.uz/ "Demo Online")
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### Prerequisites
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Requirements for the software and other tools to build, test and push
+- [Example 1](https://www.example.com)
+- [Example 2](https://www.example.com)
 
-## Laravel Sponsors
+### Installing
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+A step by step series of examples that tell you how to get a development
+environment running
 
-### Premium Partners
+Migration
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[CMS Max](https://www.cmsmax.com/)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-- **[Romega Software](https://romegasoftware.com)**
+    php artisan migrate
+
+Seed the database with records
+
+    php artisan db:seed
+###### Default Administrator:
+Login: `admin@admin.uz`
+
+Password: `123456`
+
+
+End with an example of getting some data out of the system or using it
+for a little demo
+
+## Running the tests
+
+Explain how to run the automated tests for this system
+
+### Sample Tests
+
+Explain what these tests test and why
+
+    Give an example
+
+### Style test
+
+Checks if the best practices and the right coding style has been used.
+
+    Give an example
+
+## Deployment
+
+Add additional notes to deploy this on a live system
+
+## Built With
+
+- [Contributor Covenant](https://www.contributor-covenant.org/) - Used
+  for the Code of Conduct
+- [Creative Commons](https://creativecommons.org/) - Used to choose
+  the license
 
 ## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code
+of conduct, and the process for submitting pull requests to us.
 
-## Code of Conduct
+## Versioning
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+We use [Semantic Versioning](http://semver.org/) for versioning. For the versions
+available, see the [tags on this
+repository](https://github.com/firefoxuz/dictionary/tags).
 
-## Security Vulnerabilities
+## Authors
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+- **Sultonov Daler** - *Software Developer* -
+  [GitHubPage](https://github.com/firefoxuz)
+- Drop me an email if you have any questions or comments. admin@firefox.uz
 
-## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
