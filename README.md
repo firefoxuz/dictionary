@@ -11,11 +11,11 @@ for notes on deploying the project on a live system.
 
 ## :arrow_forward: Demo
 
-You can run the demo at any time by visiting the site in your browser:  [Demo Online]( https://dic.firefox.uz/ "Demo Online")
+You can run the demo at any time by visiting the site in your browser: :earth_americas: [Demo Online]( https://dic.firefox.uz/ "Demo Online")
 
 Default Administrator 	:bangbang:
 
-Login: `admin@admin.uz`
+:man: Login: `admin@admin.uz`
 
 :key: Password: `123456`
 ### Prerequisites
@@ -36,10 +36,11 @@ Migration
 Seed the database with records
 
     php artisan db:seed
-###### Default Administrator:
-Login: `admin@admin.uz`
+###### Default Administrator 	:bangbang:
 
-Password: `123456`
+:man: Login: `admin@admin.uz`
+
+:key: Password: `123456`
 
 
 End with an example of getting some data out of the system or using it
@@ -86,8 +87,8 @@ repository](https://github.com/firefoxuz/dictionary/tags).
 ## Authors
 
 - **Sultonov Daler** - *Software Developer* -
-  [GitHubPage](https://github.com/firefoxuz)
-- :email: Drop me an email if you have any questions or comments. admin@firefox.uz
+  :octocat: [GitHubPage](https://github.com/firefoxuz)
+- Drop me an email if you have any questions or comments. :email: admin@firefox.uz
 
 
 
