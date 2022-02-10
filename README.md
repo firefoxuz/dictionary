@@ -9,21 +9,22 @@ These instructions will give you a copy of the project up and running on
 your local machine for development and testing purposes. See deployment
 for notes on deploying the project on a live system.
 
-## Demo
+## :arrow_forward: Demo
 
 You can run the demo at any time by visiting the site in your browser:  [Demo Online]( https://dic.firefox.uz/ "Demo Online")
-Default Administrator:
+
+Default Administrator 	:bangbang:
 
 Login: `admin@admin.uz`
 
-Password: `123456`
+:key: Password: `123456`
 ### Prerequisites
 
 Requirements for the software and other tools to build, test and push
 - [Example 1](https://www.example.com)
 - [Example 2](https://www.example.com)
 
-### Installing
+### :hammer: Installing
 
 A step by step series of examples that tell you how to get a development
 environment running
@@ -86,7 +87,7 @@ repository](https://github.com/firefoxuz/dictionary/tags).
 
 - **Sultonov Daler** - *Software Developer* -
   [GitHubPage](https://github.com/firefoxuz)
-- Drop me an email if you have any questions or comments. admin@firefox.uz
+- :email: Drop me an email if you have any questions or comments. admin@firefox.uz
 
 
 
