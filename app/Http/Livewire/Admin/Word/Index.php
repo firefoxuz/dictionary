@@ -1,42 +1,42 @@
 <?php
 
-namespace App\Http\Livewire\Admin\User;
+namespace App\Http\Livewire\Admin\Word;
 
 use App\Repository\Admin\User\EloquentUserRepository;
-use App\Repository\Admin\User\EloquentWordRepository;
+use App\Repository\Admin\Word\EloquentWordRepository;
 use App\Services\DBTransaction;
 use App\Services\Pagination;
 use App\Services\SweetAlert;
 use Livewire\Component;
 use Livewire\WithPagination;
 
-class UserIndex extends Component
+class Index extends Component
 {
     use WithPagination;
 
-    /**
-     * Delete user
-     * @var int $id The id of the user to be deleted
-     * @return void
-     */
+    public $search = '';
+
+    public function updatingSearch()
+    {
+        $this->resetPage();
+    }
+
     public function delete(int $id)
     {
         DBTransaction::run(function () use ($id) {
-            (new EloquentUserRepository())->delete($id);
+            (new EloquentWordRepository())->delete($id);
             SweetAlert::alertSuccess($this, 'deleted successfully');
         }, function ($exception) {
             SweetAlert::alertError($this, $exception->getMessage());
         });
     }
 
-    /**
-     * Render the view
-     * @return \Illuminate\Contracts\View\View
-     */
+
     public function render()
     {
-        return view('livewire.admin.user.user-index', [
-            'users' => (new EloquentUserRepository())->paginate(Pagination::perPage('user'))
+        $words = (new EloquentWordRepository())->searchWithPaginationAndGetUsers($this->search, Pagination::perPage('word'));
+        return view('livewire.admin.word.index', [
+            'words' => $words
         ]);
     }
 }

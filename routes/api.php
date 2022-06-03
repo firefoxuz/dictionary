@@ -17,3 +17,8 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('/words', ['App\Http\Controllers\Api\Word\WordController', 'index']);
+Route::get('/words/{word}', ['App\Http\Controllers\Api\Word\WordController', 'show']);
+Route::post('/words/search', ['App\Http\Controllers\Api\Word\WordController', 'search']);
+Route::post('/words/temp', ['App\Http\Controllers\Api\Word\TempWordController', 'store']);

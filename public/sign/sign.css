@@ -1,0 +1,45 @@
+@font-face {
+    font-family: "WeCapableSign";
+    src: url("./GallaudetRegular.ttf");
+}
+
+.sign-language {
+    font-family: "WeCapableSign";
+    display: inline-block;
+    font-size: 110px;
+    line-height: 80px;
+    text-align: center;
+    padding: 2px;
+}
+
+#signLanguage {
+    border-radius: 5px;
+}
+
+.oneWord {
+    background: #ffffe0;
+    display: inline-block;
+    margin: 10px 20px 10px 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+.oneWordEng {
+    background: #add8e6;
+    padding: 0 5px;
+    margin-bottom: 5px;
+}
+
+.upperCase {
+    border: 1px solid #333 !important;
+}
+
+.obj39xs2 {
+    display: none;
+    font-family: arial;
+    font-size: 50px;
+}
+
+.lowerCase {
+    border: 5px solid transparent !important;
+}

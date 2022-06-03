@@ -25,5 +25,7 @@ Auth::routes([
 Route::group(['middleware' => ['auth', 'disable.caching.on.local']], function () {
     Route::get('/', ['App\Http\Controllers\Admin\Home\HomeController', 'index'])->name('home');
     Route::get('/language/{name}', ['App\Http\Controllers\Admin\Language\LanguageController', 'setLanguage'])->name('lang');
-    Route::resource('/user','App\Http\Controllers\Admin\User\UserController');
+    Route::resource('/user', 'App\Http\Controllers\Admin\User\UserController');
+    Route::get('/word/temp', ['App\Http\Controllers\Admin\Word\TempWordController', 'index'])->name('word.requests');
+    Route::resource('/word', 'App\Http\Controllers\Admin\Word\WordController');
 });

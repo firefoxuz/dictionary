@@ -10,6 +10,8 @@
     <link href="{{asset('template/css/plugins.min.css')}}" rel="stylesheet">
     <!--main Css-->
     <link href="{{asset('template/css/main.min.css')}}" rel="stylesheet">
+    <!-- Sign language -->
+    <link href="{{asset('sign/sign.css')}}" rel="stylesheet">
     @livewireStyles
 </head>
 <body>
@@ -117,14 +119,12 @@
                                 <div class="media">
                                     <img src="dist/images/author.jpg" alt="" class="d-flex mr-3 img-fluid redial-rounded-circle-50" width="45" />
                                     <div class="media-body align-self-center">
-                                        <p class="mb-2 text-white text-uppercase font-weight-bold">John Deo</p>
-                                        <small class="redial-primary-light font-weight-bold text-white"> Admin </small>
+                                        <p class="mb-2 text-white text-uppercase font-weight-bold">{{auth()->user()->name}}</p>
+                                        <small class="redial-primary-light font-weight-bold text-white"> {{auth()->user()->email}} </small>
                                     </div>
                                 </div>
                             </a>
                             <ul class="dropdown-menu border-bottom-0 rounded-0 py-0">
-                                <li><a class="dropdown-item py-2" href="#"><i class="fa fa-user pr-2"></i> User Profile</a></li>
-                                <li><a class="dropdown-item py-2" href="#"><i class="fa fa-cog pr-2"></i> Setting</a></li>
                                 <form action="{{route('logout')}}" method="POST">
                                     @csrf
                                     <input type="hidden" name="method" value="DELETE">
@@ -152,15 +152,15 @@
             <div class="col-12 col-md-6">
                 <div class="clearfix d-none d-md-inline">
                     <div class="float-sm-right float-none">
-                        <ul class="list-inline mb-0">
-                            <li class="list-inline-item px-3 mr-0"><small class="font-weight-bold">Language : </small></li>
-                            <li class="list-inline-item mr-0 bg-transparent">
-                                <select class="form-control">
-                                    <option><a href="{{route('lang',['name' => 'en'])}}">English</a></option>
-                                    <option><a href="{{route('lang',['name' => 'uz'])}}">Uzbek</a></option>
-                                </select>
-                            </li>
-                        </ul>
+{{--                        <ul class="list-inline mb-0">--}}
+{{--                            <li class="list-inline-item px-3 mr-0"><small class="font-weight-bold">Language : </small></li>--}}
+{{--                            <li class="list-inline-item mr-0 bg-transparent">--}}
+{{--                                <select class="form-control">--}}
+{{--                                    <option><a href="{{route('lang',['name' => 'en'])}}">English</a></option>--}}
+{{--                                    <option><a href="{{route('lang',['name' => 'uz'])}}">Uzbek</a></option>--}}
+{{--                                </select>--}}
+{{--                            </li>--}}
+{{--                        </ul>--}}
                     </div>
                 </div>
             </div>

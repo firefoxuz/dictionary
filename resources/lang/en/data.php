@@ -23,6 +23,20 @@ return [
         'new' => 'Foydalanuvchi qo\'shish',
         'full_name' => 'F.I.O',
         'email' => 'Email',
-        'date' => 'Sana'
+        'date' => 'Sana',
+
     ],
+    'word' => [
+        'word' => 'So\'zlar',
+        'dictionary' => 'Lug\'at',
+        'add_new_word' => 'Yangi so\'z qo\'shish',
+        'list' => 'Ro\'yxat',
+        'requests' => 'So\'rovlar',
+        'user' => 'Foydalanuvchi',
+        'create' => [
+            'word' => 'So\'z',
+            'definition' => 'Tavsifi',
+        ]
+    ],
+    'search' => 'Qidiruv',
 ];
